@@ -1,0 +1,76 @@
+.secao-generica {
+  width: 100vw;
+  height: 100vh;
+}
+
+#receitas-com-afeto {
+  background-image: url('../../assets/images/receitas-com-afeto.png');
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+h1 {
+  width: 400px;
+
+  position: absolute;
+
+  top: 16%;
+  left: 66%;
+
+  font-size: var(--font-size-larger);
+
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
+}
+
+#card-horizontal {
+  display: flex;
+
+  justify-content: space-evenly;
+
+  width: 100vw;
+}
+
+#titulo-receitas-da-semana {
+  font-size: var(--font-size-big);
+  color: var(--dark-primary-color);
+
+  text-align: center;
+
+}
+
+#comer-e-viver {
+  position: relative;
+
+  background-image: url('../../assets/images/comer-e-viver.png');
+}
+
+#titulo-comer-e-viver {
+  position: absolute;
+
+  top: 40%;
+  left: 4%;
+
+  font-size: var(--font-size-big);
+  
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
+}
+
+#comer-e-viver p {
+  position: absolute;
+
+  top: 58%;
+  left: 4%;
+  
+  color: #FFF;
+
+  font-weight: 500;
+
+  width: 400px;
+
+  font-size: large;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
