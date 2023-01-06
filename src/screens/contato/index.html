@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Contatos</title>
   <link rel="stylesheet" href="/src/styles/global.css">
   <link rel="stylesheet" href="/src/styles/components/header.css">
   <link rel="stylesheet" href="/src/styles/components/footer.css">
@@ -19,8 +19,8 @@
 
     <nav>
       <a href="/index.html">início</a>
-      <a href="">receitas</a>
-      <a href="">contato</a>
+      <a href="/src/screens/receitas/index.html">receitas</a>
+      <a href="#">contato</a>
     </nav>
   </header>
 
@@ -29,21 +29,33 @@
   </section>
 
   <main>
-    <form>
-      <h2>Contato</h2>
-
+    
       <img src="/assets/images/form.png" alt="">
 
-      <input type="text" placeholder="nome">
-      <input type="email" placeholder="email">
-      <textarea>
-      </textarea>
-    </form>
+      <form id="form">
+        <h2>Contato</h2>
+  
+  
+        <input type="text" placeholder="nome">
+        <input type="email" placeholder="email">
+        <textarea placeholder="sua mensagem..."></textarea>
+
+        <button>Enviar</button>
+      </form>
+          
   </main>
 
   <footer>
     <img src="../../../assets/images/omma-logo.png" alt="">
     <span>© 2022 omma - Todos os direitos são de vocês</span>
   </footer>
+
+  <script>
+    const form = document.getElementById('form')
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault()
+    })
+  </script>
 </body>
 </html>

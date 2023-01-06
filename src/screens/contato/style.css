@@ -19,3 +19,92 @@ section h1 {
   top: 10%;
   left: 10%;
 }
+
+main {
+  margin: 60px 0px;
+
+  height: 100%;
+}
+
+main {
+  width: 100vw;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+main img {
+  height: 600px;
+}
+
+form {
+  width: 800px;
+  height: 600px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-around;
+
+  border: 1px solid var(--dark-primary-color);
+  border-radius: 20px;
+
+  margin-left: 16px;
+  padding-left: 5%;
+}
+
+form input {
+  width: 90%;
+
+  padding: 12px;
+  border-radius: 7px;
+
+  border: 1px solid var(--dark-primary-color);
+  outline: none;
+}
+
+form input:focus {
+  box-shadow: 0px 2px 4px #000;
+}
+
+form h2 {
+  color: var(--dark-primary-color);
+
+  font-size: 36px;
+}
+
+textarea {
+  width: 90%;
+  height: 50%;
+  resize: none;
+
+  padding: 12px;
+
+  border-radius: 7px;
+
+  border: 1px solid var(--dark-primary-color);
+}
+
+button {
+  width: 164px;
+
+  padding: 14px;
+  
+  border-radius: 50px;
+
+  border: 0;
+
+  color: #FFF;
+
+  background-color: var(--primary-color);
+
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 0.5s;
+
+  box-shadow: 0px 2px 2px #000;
+}
