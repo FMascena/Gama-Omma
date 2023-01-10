@@ -21,6 +21,10 @@ a {
   display: flex;
 }
 
+.show-nav {
+  display: none;
+}
+
 :root {
   /** CORES*/
   --dark-primary-color: #FFA000;
