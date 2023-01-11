@@ -8,6 +8,8 @@
   background-repeat: no-repeat;
 
   position: relative;
+
+  /* z-index: ; */
 }
 
 h1 {
@@ -141,10 +143,34 @@ h1 {
   }
 
   #comer-e-viver {
-    display: none;
+    position: relative;
+
+    top: 800px;
+    /* display: none; */
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-image: url('../../assets/images/smartphones/comer-e-viver.png');
+    background-size: cover;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
-  footer {
-    display: none;
+  #titulo-comer-e-viver {
+    position: static;
+
+    font-size: 3rem;
+  }
+
+  #comer-e-viver p {
+    position: static;
+
+    width: 90%;
+
+    margin-bottom: 10px;
   }
 }

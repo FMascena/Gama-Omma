@@ -25,6 +25,10 @@ a {
   display: none;
 }
 
+#nav-2 {
+  display: none;
+}
+
 :root {
   /** CORES*/
   --dark-primary-color: #FFA000;
