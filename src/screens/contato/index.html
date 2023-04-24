@@ -5,16 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contatos</title>
-  <link rel="stylesheet" href="/src/styles/global.css">
-  <link rel="stylesheet" href="/src/styles/components/header.css">
-  <link rel="stylesheet" href="/src/styles/components/footer.css">
-  <link rel="stylesheet" href="/src/styles/components/card-receita.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="/teste-workshop/src/styles/global.css">
+  <link rel="stylesheet" href="/teste-workshop/src/styles/components/header.css">
+  <link rel="stylesheet" href="/teste-workshop/src/styles/components/footer.css">
+  <link rel="stylesheet" href="/teste-workshop/src/styles/components/card-receita.css">
+  <link rel="stylesheet" href="/teste-workshop/src/screens/contato/style.css">
 </head>
 <body>
+
   <header>
+
     <div>
-      <img src="/assets/images/omma-logo.png" alt="logo escrito omma na cor branca">
+      <img src="/teste-workshop/assets/images/omma-logo.png" alt="logo escrito omma na cor branca">
     </div>
 
     <nav>
@@ -22,6 +24,7 @@
       <a href="/src/screens/receitas/index.html">receitas</a>
       <a href="#">contato</a>
     </nav>
+
   </header>
 
   <section>
@@ -29,9 +32,11 @@
   </section>
 
   <main>
-      <img src="/assets/images/form.png" alt="">
+
+      <img src="/teste-workshop/assets/images/form.png" alt="">
 
       <form id="form">
+
         <h2>Contato</h2>
   
   
@@ -40,21 +45,27 @@
         <textarea placeholder="sua mensagem..."></textarea>
 
         <button>Enviar</button>
+
       </form>
           
   </main>
 
   <footer>
-    <img src="../../../assets/images/omma-logo.png" alt="">
+
+    <img src="/teste-workshop/assets/images/omma-logo.png" alt="">
     <span>© 2022 omma - Todos os direitos são de vocês</span>
+
   </footer>
 
   <script>
+
     const form = document.getElementById('form')
 
     form.addEventListener("submit", (e) => {
       e.preventDefault()
     })
   </script>
+
 </body>
+
 </html>
