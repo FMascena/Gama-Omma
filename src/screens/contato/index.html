@@ -4,19 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="stylesheet" href="/src/styles/components/header.css">
+  <link rel="stylesheet" href="/src/styles/components/footer.css">
+  <link rel="stylesheet" href="/src/styles/components/card-receita.css">
+  <link rel="stylesheet" href="/src/screens/contato/style.css">
   <title>Contatos</title>
-  <link rel="stylesheet" href="/teste-workshop/src/styles/global.css">
-  <link rel="stylesheet" href="/teste-workshop/src/styles/components/header.css">
-  <link rel="stylesheet" href="/teste-workshop/src/styles/components/footer.css">
-  <link rel="stylesheet" href="/teste-workshop/src/styles/components/card-receita.css">
-  <link rel="stylesheet" href="/teste-workshop/src/screens/contato/style.css">
 </head>
 <body>
 
   <header>
 
     <div>
-      <img src="/teste-workshop/assets/images/omma-logo.png" alt="logo escrito omma na cor branca">
+      <img src="/assets/images/omma-logo.png" alt="logo escrito omma na cor branca">
     </div>
 
     <nav>
@@ -36,29 +37,23 @@
       <img src="/teste-workshop/assets/images/form.png" alt="">
 
       <form id="form">
-
         <h2>Contato</h2>
-  
-  
-        <input type="text" placeholder="nome">
-        <input type="email" placeholder="email">
-        <textarea placeholder="sua mensagem..."></textarea>
-
-        <button>Enviar</button>
-
+        <input id="nome" type="text" placeholder="Nome">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Digite aqui sua mensagem..."></textarea>
+        <button type="button" id="btn-enviar">Enviar</button>
       </form>
           
   </main>
 
   <footer>
 
-    <img src="/teste-workshop/assets/images/omma-logo.png" alt="">
+    <img src="/assets/images/omma-logo.png" alt="">
     <span>© 2022 omma - Todos os direitos são de vocês</span>
 
   </footer>
 
   <script>
-
     const form = document.getElementById('form')
 
     form.addEventListener("submit", (e) => {
@@ -66,6 +61,9 @@
     })
   </script>
 
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="/src/js/contato.js"></script>
 </body>
 
 </html>
